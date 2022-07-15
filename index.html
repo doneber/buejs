@@ -7,6 +7,20 @@
     <title>BueJs</title>
   </head>
   <body>
-    <p>Welcome to BueJs project</p>
+    <script src="./bue.js"></script>
+    <div id="app">
+      <span>Hi</span>
+      <p b-text="saludo"></p>
+    </div>
+    <script>
+      const { createApp } = Bue;
+      createApp({
+        data() {
+          return {
+            saludo: "¡Hola Bue!"
+          };
+        }
+      }).mount();
+    </script>
   </body>
 </html>
